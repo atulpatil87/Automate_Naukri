@@ -30,8 +30,8 @@ public class NaukariQA
 		System.out.println("\t Website Open: "+driver.getCurrentUrl());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("Login"))).click();
 		System.out.println("\t Clicked On Login Button");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[placeholder*='Username']"))).sendKeys("atulbpatil98@gmail.com", Keys.TAB); // Enter E-mail Id.
-		driver.switchTo().activeElement().sendKeys("Atul@123",Keys.ENTER); // Enter Password
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[placeholder*='Username']"))).sendKeys("Enter Your Email", Keys.TAB); // Enter E-mail Id.
+		driver.switchTo().activeElement().sendKeys("PASSWORD",Keys.ENTER); // Enter Password
 		System.out.println("\t Username And Password Enterd ");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("qsb-keyskill-sugg"))).sendKeys("Manual Tester", Keys.ENTER);
 		System.out.println("\t Search Field Enter And Press Search Button");
