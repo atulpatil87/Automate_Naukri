@@ -31,8 +31,8 @@ public class Automation_Script
 		System.out.println("\t Website Open: "+driver.getCurrentUrl());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login_Layer"))).click();
 		System.out.println("\t Clicked On Login Button");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[placeholder*='Username']"))).sendKeys("Atulbpatil98@gmail.com", Keys.TAB); // Enter E-mail Id.
-		driver.switchTo().activeElement().sendKeys("Atul@123",Keys.ENTER); // Enter Password
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[placeholder*='Username']"))).sendKeys("Enter Your Email Here", Keys.TAB); // Enter E-mail Id.
+		driver.switchTo().activeElement().sendKeys("Enter your Password here",Keys.ENTER); // Enter Password
 		System.out.println("\t Username And Password Enterd ");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("qsb-keyskill-sugg"))).sendKeys("Manual Tester", Keys.ENTER);
 		System.out.println("\t Search Field Enter And Press Search Button");
@@ -163,4 +163,5 @@ public class Automation_Script
 		       driver.switchTo().window(newTb.get(0));
 			}
 	}
+
 }
